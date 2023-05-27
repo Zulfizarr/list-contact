@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact List</title>
+</head>
+<body>
+
+    
+    <form id="add-contact-form">
+        <h1>Contact list</h1>
+        <label>
+          Enter your name:
+          <input id="name-input" type="text" placeholder="Name" required class="form-control">
+        </label>
+        <label>
+          Enter your phone number:
+          <input id="phone-input" type="tel" pattern="\d{12}" placeholder="123456789012" required class="form-control">
+        </label>
+        <button type="submit" class="btn btn-primary">Add Contact</button>
+      </form>
+      <template id="contact-template">
+        <li>
+          <h3 class="contact-name"></h3>
+          <a class="contact-phone"></a>
+          <button class="delete-btn btn btn-danger ">Delete</button>
+        </li>
+      </template>
+      <main>
+        <ul id="contact-list">
+  
+        </ul>
+      </main>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
